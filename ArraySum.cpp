@@ -24,5 +24,4 @@ int main()
     int n = sizeof(arr) / sizeof(arr[0]);
     cout << "Sum of given array is " << sum(arr, n);
     return 0;
-}
- 
+
