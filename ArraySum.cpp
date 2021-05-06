@@ -13,7 +13,7 @@ int sum(int arr[], int n)
     // Iterate through all elements
     // and add them to sum
     for (int i = 0; i < n; i++)
-    sum += arr[i];
+    sum += arr[i]
  
     return sum;
 }
