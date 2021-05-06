@@ -1,7 +1,6 @@
 /* C++ Program to find sum of elements
 in a given array */
 #include <bits/stdc++.h>
-#include <iostream.h>
 using namespace std;
  
 // function to return sum of elements
