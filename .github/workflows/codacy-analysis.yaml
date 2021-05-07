@@ -2,6 +2,9 @@ name: Codacy Analysis CLI
 
 on: ["push"]
 
+engines:
+  cppcheck:
+    language: c++
 jobs:
   codacy-analysis-cli:
     name: Codacy Analysis CLI
