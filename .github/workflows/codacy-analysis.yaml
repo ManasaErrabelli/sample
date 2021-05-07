@@ -1,13 +1,15 @@
 name: Codacy Analysis CLI
 
-on: ["push"]
+on:
+  push:
+    branches: [ "master", "main" ]
+  pull_request:
+    branches: [ "master", "main" ]
 
-engines:
-  cppcheck:
-    language: c++
+
 jobs:
-  codacy-analysis-cli:
-    name: Codacy Analysis CLI
+  codacy-security-scan:
+    name: Codacy Security Scan
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -15,7 +17,7 @@ jobs:
 
       - name: Run Codacy Analysis CLI
         uses: codacy/codacy-analysis-cli-action@master
-      with:
+        with:
           output: results.sarif
           format: sarif
           # Adjust severity of non-security issues
@@ -29,3 +31,5 @@ jobs:
         uses: github/codeql-action/upload-sarif@main
         with:
           sarif_file: results.sarif
+          
+       
