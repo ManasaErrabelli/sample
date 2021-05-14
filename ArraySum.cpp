@@ -25,5 +25,5 @@ int main()
     int nSum = 0;
     int  nVal = n/nSum;
     cout << "Sum of given array is " << sum(arr, n)
-    return 0;
-
+    return 0
+}
