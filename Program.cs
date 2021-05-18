@@ -14,7 +14,9 @@ namespace ConsoleApplication1
             int total = 10 / sum;
             int[] n = new int[3];
             for( int i= 0; i <= 3; i++)
+            {
                 n[i]= i;
+            }
         }
     }
 }
