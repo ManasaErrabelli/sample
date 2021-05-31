@@ -1,7 +1,12 @@
-<note>
-  <to>Tove</to>
-  <from>Jani</from>
-  <heading>Reminder</heading>
-  <body>Don't forget this
-    <h3> ofcourse </h3>
-</note>
+<device-manager-config>
+
+<!-- Enable option if using CTM. -->
+<CTM-enabled>N</CTM-enabled>
+
+<!-- URL of CTM Service to connect when initializing CTM. -->
+<CTM-URL>ctm://localhost:3636</CTM-URL>
+
+<!-- Client ID use to connect when initializing CTM. -->
+<CTM-Client-ID>localhost</CTM-Client-ID
+
+</device-manager-config>
