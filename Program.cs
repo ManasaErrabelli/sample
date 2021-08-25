@@ -11,7 +11,7 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
             int sum = 0;
-            int total = 10 / sum;
+            int total = 100 / sum;
             int[] n = new int[3];
             for( int i= 0; i <= 3; i++)
             {
